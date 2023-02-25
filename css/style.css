@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.8rem;
+  color: hsl(201, 11%, 66%);
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ***************************** */
+/* REUSEABLE CLASSES */
+/* ***************************** */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+.container-center {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 5.4rem;
+}
+
+.grid-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 1.8rem;
+}
+
+.heading-primary {
+  font-size: 4.8rem;
+  letter-spacing: -0.2rem;
+}
+
+.heading-secondary {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.container-md {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.container-sm {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.margin--right-sm {
+  margin-right: 2.4rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 3.2rem;
+}
+
+.section-heading {
+  margin-bottom: 6.4rem;
+}
+
+.cta-link:link,
+.cta-link:visited {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  background-color: hsl(171, 66%, 44%);
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+
+.cta-link:hover,
+.cta-link:active {
+  box-shadow: 0 2rem 3.2rem rgba(38, 186, 164, 0.2);
+}
+
+.cta-link-right:link,
+.cta-link-right:visited {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.cta-link-right:hover,
+.cta-link-right:active {
+  box-shadow: 0 2rem 3.2rem rgba(97, 115, 255, 0.2);
+}
+
+/* ******************************** */
+/* SECTION HERO */
+/* ******************************** */
+
+.section-hero {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, white 60%),
+    url("../images/bg-header-desktop.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-text {
+  padding: 0 4.8rem;
+  margin-bottom: 4.8rem;
+}
+
+/* ******************************** */
+/* SECTION HOW IT WORKS */
+/* ******************************** */
+
+.section-how-it-works {
+  margin-bottom: 9.6rem;
+}
+
+.how-it-works-img {
+  width: 100%;
+}
+
+.how-it-works-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding-right: 6.4rem;
+}
+
+/* ******************************** */
+/* SECTION HOW IT WORKS 2 */
+/* ******************************** */
+
+.section-how-it-works-2 {
+  margin-bottom: 9.6rem;
+}
+
+.how-it-works-2-img-box {
+  display: flex;
+  justify-content: center;
+}
+
+/* ******************************** */
+/* SECTION FEATURES */
+/* ******************************** */
+
+.section-feature {
+  margin-bottom: 9.6rem;
+}
+
+.feature {
+  text-align: center;
+  justify-self: center;
+}
+
+.feature-icon {
+  margin-bottom: 2rem;
+}
+
+/* ******************************** */
+/* SECTION FEATURED IN */
+/* ******************************** */
+
+.section-featured-in {
+  padding-top: 9.6rem;
+  margin-bottom: 9.6rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-img {
+  object-fit: contain;
+}
+
+/* ******************************** */
+/* SECTION CTA */
+/* ******************************** */
+.section-cta {
+  padding-top: 6.4rem;
+  margin-bottom: 9.6rem;
+}
+
+/* ******************************** */
+/* SECTION FOOTER */
+/* ******************************** */
+
+.section-footer {
+  background-color: #f0f0f0;
+}
+
+.footer-container {
+  padding: 3.2rem 0 3.2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  gap: 12rem;
+}
+
+.footer-logo {
+  width: 6.4rem;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.footer-links a:link,
+.footer-links a:visited {
+  display: inline-block;
+  color: hsl(210, 10%, 33%);
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:active {
+  color: hsl(171, 66%, 44%);
+}
+
+.footer-icons {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.footer-icons svg:hover path {
+  fill: hsl(171, 66%, 44%);
+}
