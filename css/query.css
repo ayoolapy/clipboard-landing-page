@@ -85,7 +85,15 @@
   }
 }
 
+/* *************************** */
+/* MOBILE PHONE */
+/* *************************** */
+
 @media (max-width: 31em) {
+  .section-hero {
+    background-image: url("../images/bg-header-mobile.png");
+  }
+
   .hero-text {
     padding: 0 6.4rem;
   }
